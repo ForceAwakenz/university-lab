@@ -65,16 +65,30 @@ mat-toolbar {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1250px) {
   mat-toolbar {
     padding: 8px 16px;
     height: auto;
     flex-wrap: wrap;
+
+    span {
+      font-size: 1rem;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 8px;
+    }
   }
 
   nav {
     width: 100%;
-    margin-top: 8px;
     justify-content: center;
+    gap: 4px;
+    margin: 0;
+
+    a {
+      padding: 4px 8px;
+      font-size: 0.9rem;
+      letter-spacing: 0.2px;
+    }
   }
 }
