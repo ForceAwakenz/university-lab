@@ -1,17 +1,26 @@
 <mat-toolbar color="primary">
+  <img src="assets/images/portrait.jpeg" alt="Portrait" class="portrait" />
   <span>Розробка на Angular</span>
   <span class="spacer"></span>
   <nav>
-    <a mat-button routerLink="/home">Головна</a>
-    <a mat-button routerLink="/about">Про Angular</a>
-    <a mat-button routerLink="/components">Компоненти</a>
-    <a mat-button routerLink="/resources">Навчальні матеріали</a>
-    <a mat-button routerLink="/gallery">Галерея</a>
-    <a mat-button routerLink="/faq">FAQ</a>
-    <a mat-button routerLink="/contacts">Контакти</a>
-    <a mat-button routerLink="/tips">Поради</a>
-    <a mat-button routerLink="/libraries">Бібліотеки</a>
-    <a mat-button routerLink="/labs">Лабораторні роботи</a>
+    <a mat-button routerLink="/home" routerLinkActive="active">Головна</a>
+    <a mat-button routerLink="/about" routerLinkActive="active">Про Angular</a>
+    <a mat-button routerLink="/components" routerLinkActive="active"
+      >Компоненти</a
+    >
+    <a mat-button routerLink="/resources" routerLinkActive="active"
+      >Навчальні матеріали</a
+    >
+    <a mat-button routerLink="/gallery" routerLinkActive="active">Галерея</a>
+    <a mat-button routerLink="/faq" routerLinkActive="active">FAQ</a>
+    <a mat-button routerLink="/contacts" routerLinkActive="active">Контакти</a>
+    <a mat-button routerLink="/tips" routerLinkActive="active">Поради</a>
+    <a mat-button routerLink="/libraries" routerLinkActive="active"
+      >Бібліотеки</a
+    >
+    <a mat-button routerLink="/labs" routerLinkActive="active"
+      >Лабораторні роботи</a
+    >
   </nav>
 </mat-toolbar>
 <router-outlet></router-outlet>

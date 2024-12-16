@@ -1,1 +1,127 @@
-<p>components works!</p>
+<div class="page-container">
+  <h1>Компоненти Angular Material</h1>
+
+  <section>
+    <h2>Кнопки та індикатори</h2>
+    <div class="component-demo">
+      <h3>Кнопки</h3>
+      <div class="demo-content">
+        <button mat-button>Базова кнопка</button>
+        <button mat-raised-button color="primary">Об'ємна кнопка</button>
+        <button mat-stroked-button color="accent">Окреслена кнопка</button>
+        <button mat-fab color="warn">
+          <mat-icon>add</mat-icon>
+        </button>
+        <button mat-mini-fab>
+          <mat-icon>home</mat-icon>
+        </button>
+      </div>
+      <p class="description">
+        Angular Material надає різні типи кнопок: звичайні, об'ємні, окреслені,
+        круглі (FAB) та міні-круглі. Кожен тип може мати різні кольори теми.
+      </p>
+    </div>
+
+    <div class="component-demo">
+      <h3>Прогрес-індикатори</h3>
+      <div class="demo-content">
+        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        <mat-spinner diameter="40"></mat-spinner>
+      </div>
+      <p class="description">
+        Прогрес-індикатори показують стан завантаження або прогрес операції.
+        Можуть бути лінійними або круговими, з визначеним або невизначеним
+        прогресом.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Форми та введення</h2>
+    <div class="component-demo">
+      <h3>Поля введення</h3>
+      <div class="demo-content">
+        <mat-form-field appearance="fill">
+          <mat-label>Введіть ім'я</mat-label>
+          <input matInput />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Виберіть дату</mat-label>
+          <input matInput [matDatepicker]="picker" />
+          <mat-datepicker-toggle
+            matSuffix
+            [for]="picker"
+          ></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Виберіть опцію</mat-label>
+          <mat-select>
+            <mat-option value="option1">Опція 1</mat-option>
+            <mat-option value="option2">Опція 2</mat-option>
+            <mat-option value="option3">Опція 3</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <p class="description">
+        Material Design пропонує різні типи полів введення: текстові поля,
+        випадаючі списки, вибір дати тощо. Всі вони підтримують різні стани та
+        валідацію.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Навігація та розмітка</h2>
+    <div class="component-demo">
+      <h3>Вкладки</h3>
+      <div class="demo-content">
+        <mat-tab-group>
+          <mat-tab label="Перша">
+            <p>Вміст першої вкладки</p>
+          </mat-tab>
+          <mat-tab label="Друга">
+            <p>Вміст другої вкладки</p>
+          </mat-tab>
+          <mat-tab label="Третя">
+            <p>Вміст третьої вкладки</p>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+      <p class="description">
+        Вкладки дозволяють організувати контент у групи, які користувач може
+        перемикати. Підтримують як статичний, так і динамічний вміст.
+      </p>
+    </div>
+
+    <div class="component-demo">
+      <h3>Картки</h3>
+      <div class="demo-content cards">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Заголовок картки</mat-card-title>
+            <mat-card-subtitle>Підзаголовок</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              Картки можуть містити текст, зображення та інші елементи. Вони
+              часто використовуються для відображення пов'язаної інформації.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>ДЕТАЛЬНІШЕ</button>
+            <button mat-button>ПОДІЛИТИСЯ</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <p class="description">
+        Картки - це контейнери для контенту, які можуть містити текст,
+        зображення та дії. Вони часто використовуються в інтерфейсах для
+        групування пов'язаної інформації.
+      </p>
+    </div>
+  </section>
+</div>
