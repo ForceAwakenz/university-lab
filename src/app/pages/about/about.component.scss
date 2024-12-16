@@ -1,5 +1,5 @@
 .about-page {
-  background-color: var(--mat-background-color);
+  background-color: #2c2c2c;
   min-height: calc(100vh - 64px);
   padding: 20px;
 
@@ -58,8 +58,6 @@
 
 :host-context(.dark-theme) {
   .about-page {
-    background-color: var(--mat-dark-background-color);
-
     section {
       background-color: var(--mat-card-dark-background-color);
     }

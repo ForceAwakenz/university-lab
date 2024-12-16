@@ -5,7 +5,7 @@ import { ContactsComponent } from './pages/contacts/contacts.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { HomeComponent } from './pages/home/home.component';
-import { LabsComponent } from './pages/labs/labs.component';
+import { PersonalitiesComponent } from './pages/labs/labs.component';
 import { LibrariesComponent } from './pages/libraries/libraries.component';
 import { ResourcesComponent } from './pages/resources/resources.component';
 import { TipsComponent } from './pages/tips/tips.component';
@@ -20,7 +20,7 @@ export const routes: Routes = [
   { path: 'contacts', component: ContactsComponent },
   { path: 'tips', component: TipsComponent },
   { path: 'libraries', component: LibrariesComponent },
-  { path: 'labs', component: LabsComponent },
+  { path: 'personalities', component: PersonalitiesComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home' },
 ];
